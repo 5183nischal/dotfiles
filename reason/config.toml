@@ -1,0 +1,28 @@
+[storage]
+paper_metadata = '~/Downloads'
+command_history = '~/Downloads'
+max_history_size = 1000
+note_dir = '~/Downloads'
+file_dir = '~/Downloads'
+
+[filter]
+case_insensitive_regex = true
+
+[output]
+table_columns = [
+    'title',
+    'first author',
+    'venue',
+    'year',
+]
+viewer_command = [
+  '/Applications/sioyek.app/Contents/MacOS/sioyek',
+  '--new-window',
+]
+viewer_batch = false
+editor_command = [
+  'nvim',
+  '-p'
+]
+editor_batch = true
+browser_command = ['/Applications/Arc.app/Contents/MacOS/Arc']
